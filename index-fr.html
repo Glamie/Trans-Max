@@ -2,6 +2,50 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Logistic",
+                "serviceType": "Road Transport",
+                "name": "PHU Trans-Max",
+                "telephone": "34 362 7418",
+                "email": "transs-max@wp.pl",
+                "priceRange": "$$",
+                "areaServed":{
+                    "@type": "City",
+                    "name": "Biała"
+                },
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Częstochowska 85",
+                    "addressLocality": "Biała",
+                    "postalCode": "42-125",
+                    "addressCountry": "PL"
+                },
+                "provider":{
+                    "@type": "Business",
+                    "name": "PHU Trans-Max"
+                },     
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 50.877874951656466,
+                    "longitude": 19.057822788785728
+                },
+                "openingHoursSpecification": [{
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                    ],
+                    "opens": "08:00",
+                    "closes": "17:00"
+                }] 
+            }
+        </script>
+
          <script async>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -14,11 +58,18 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
         <title>PHU Trans-Max</title>
         <meta name="description" content="Services logistiques professionnels: transport national et international, 
         haut niveau de connaissances et de compétences de la société de commerce et de services Trans-Max">
         <meta name="keywords" content="Logistique, transport, expédition, transport international, transport national, 
         chaîne d'approvisionnement, services logistiques">
+         <meta property="og:title" content="PHU Trans-Max"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content=""/>
+        <meta property="og:image" content="images/trans-max.png"/>
+        <meta property="og:description" content="PHU Trans-Max est une entreprise de transport de confiance située à Biała. Logistique, expédition, transport. Appelez le 34 362 7418.">
         <meta name="robots" content="all">
     </head>
     <body>
