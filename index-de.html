@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+         <script async>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+         })(window,document,'script','dataLayer','GTM-PC7GCTLP');</script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <title>PHU Trans-Max</title>
+        <meta name="description" content="Professionelle Logistikdienstleistungen: nationaler und internationaler Transport, 
+        hohes Fachwissen und Kompetenz des Handels- und Dienstleistungsunternehmens Trans-Max">
+        <meta name="keywords" content="Logistik, Transport, Spedition,
+        Internationaler Transport, Inlandstransport, Lieferkette, Logistikdienstleistungen">
+        <meta name="robots" content="all">
+    </head>
+    <body>
+         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PC7GCTLP"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <header>
+            <nav class="naglowek">
+            <h1  id="nazwa_firmy">PHU Trans-Max s.c.</h1>
+            <button class="hamburger" aria-label="Otwórz menu">
+                <i class="fas fa-bars"></i>
+                <span class="hamburger-text">MENÜ</span>
+            </button>
+
+            <ul class="menu">
+                <li><a href="index-de.html">Startseite</a></li>
+                <li><a href="#uslugi">Dienstleistungen</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+           </nav>
+        </header>
+
+        <div class="language-selector">
+            <ul>
+                <li><a href="index-pl.html" title="Polski" rel="alternate" hreflang="pl"><img src="https://flagcdn.com/w20/pl.png" alt="Polski"></a></li>
+                <li><a href="index-en.html" title="English" rel="alternate" hreflang="en"><img src="https://flagcdn.com/w20/gb.png" alt="English"></a></li>
+                <li><a href="index-de.html" title="Deutsch" rel="alternate" hreflang="de"><img src="https://flagcdn.com/w20/de.png" alt="Deutsch"></a></li>
+                <li><a href="index-fr.html" title="Français" rel="alternate" hreflang="fr"><img src="https://flagcdn.com/w20/fr.png" alt="Français"></a></li>
+                <li><a href="index-it.html" title="Italiano" rel="alternate" hreflang="it"><img src="https://flagcdn.com/w20/it.png" alt="Italiano"></a></li>
+                <li><a href="index-nl.html" title="Nederlands" rel="alternate" hreflang="nl"><img src="https://flagcdn.com/w20/nl.png" alt="Nederlands"></a></li>
+            </ul>
+        </div>
+
+        <section class="hero">
+            <img src="images/hero_image.jpg" alt="Bild eines Lastwagens">
+            <div class="slogan">
+                <h1>Logistik ist unsere Leidenschaft</h1>
+            </div>
+        </section>
+        
+        <section class="informacje">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2 col-offset-2 icon-container">
+                        <div class="icon-square">
+                            <i class="fa-solid fa-boxes-packing"></i>
+                        </div>
+                        <div class="icon-text">
+                            <h3>Logistik</h3>
+                            <p>Umfassende Logistikdienstleistungen für Ihr Unternehmen. Präzision, Erfahrung und moderne Technologien sorgen für ein optimales Supply Chain Management.</p>
+                        </div>
+                    </div>
+                    <div class="col-2 icon-container">
+                        <div class="icon-square middle-icon">
+                            <i class="fa-solid fa-dolly"></i>
+                        </div>
+                        <div class="icon-text">
+                            <h3 class="blue-title">Spedition</h3>
+                            <p>Wir organisieren den Warentransport schnell und effizient, mit Fokus auf Zuverlässigkeit und hochwertige Logistikdienstleistungen.</p>
+                        </div>
+                    </div>
+                    <div class="col-2 icon-container">
+                        <div class="icon-square">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+                        <div class="icon-text">
+                            <h3>Transport</h3>
+                            <p>Fortschrittliche Überwachungssysteme und erfahrenes Personal garantieren einen schnellen und sicheren Transport Ihrer Waren.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div id="uslugi">
+            <h2>Unsere Dienstleistungen</h2>
+        </div>
+
+        <section id="lista_uslug">
+            <ul>
+                <li>Bustransporte im Inland</li>
+                <li>Bustransporte im Ausland</li>
+                <li>Abschlepptransporte im Inland</li>
+                <li>Abschlepptransporte im Ausland</li>
+                <li>Kurierdienste</li>
+                <li>Umzüge im Inland</li>
+                <li>LKW-Transporte im Inland</li>
+                <li>LKW-Transporte im Ausland</li>
+                <li>Personenbeförderung</li>
+                <li>Umzüge im Ausland</li>
+                <li>Weitere Transportdienstleistungen</li>
+            </ul>
+        </section>
+
+        <section class="liczby">
+            <div class="container">
+                <div class="row numbers-section">
+                    <div class="col-2 number-container">
+                        <div class="label">Abgeschlossene Transporte</div>
+                        <div class="number">81992</div>
+                    </div>
+                    <div class="col-2 number-container">
+                        <div class="label">Im Geschäft seit</div>
+                        <div class="number">2008</div>
+                    </div>
+                    <div class="col-2 number-container">
+                        <div class="label">Zufriedene Kunden</div>
+                        <div class="number">1200</div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+        <footer>
+            <div class="footer-container">
+            <div class="footer-column">
+                <div class="footer-title">
+                    <h3>Über uns</h3>
+                    <div class="title-line"></div>
+                </div>
+                <p class="o_nas">
+                    PHU Trans-Max s.c. ist auf den Straßentransport spezialisiert.
+                    Das hohe Wissen und die Kompetenz des Unternehmens, die sich aus langjähriger Branchenerfahrung ergeben, 
+                    gewährleisten, dass die Erwartungen der Kunden erfüllt und die anvertrauten Projekte umgesetzt werden.
+                    Das Unternehmen trat 2008 in den Markt ein und ist bis heute dynamisch tätig.
+                    Der Hauptsitz des Unternehmens befindet sich in Biała in der Woiwodschaft Schlesien.
+                    Da uns keine detaillierten Informationen zum Angebot des Unternehmens vorliegen, 
+                    empfehlen wir Ihnen, uns telefonisch oder per E-Mail zu kontaktieren.
+                </p>
+            </div>
+            
+        <section id="kontakt">
+            <div class="footer-column">
+                <div class="footer-title">
+                    <h3>Kontakt</h3>
+                    <div class="title-line"></div>
+                </div>
+                <div class="rowfoot">
+                    <p>Adresse:</p>
+                    <p>Polen, Straße: Częstochowska 85, 42-125 Biała</p>
+    
+                    <p>Telefon:</p>
+                    <p>+48 34 362 7418 - Büro<br>+48 504 411 310 - der Boss</p>
+    
+                    <p>Email:</p>
+                    <p>transs-max@wp.pl </p>
+                </div>
+            </div>
+        </section>
+        </div>
+
+         <div class="map-container">
+            <div id="map" style="height: 350px;"></div>
+            <br/>
+            <small>
+                <a href="https://www.openstreetmap.org/?#map=19/50.877647/19.057471">
+                    Größere Karte anzeigen
+                </a>
+            </small>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>@PHU Trans-Max s.c.</p>
+            <p>2025</p>
+        </div>
+        </footer>
+    </body>
+    <script src="skrypt.js"></script>
+</html>

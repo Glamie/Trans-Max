@@ -1,0 +1,21 @@
+<div class="map-container">
+                    <iframe alt="Mapa siedziby Trans-Max w Białej" width="425" 
+                    height="350" 
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=19.056443274021152%2C50.87714916215935%2C19.05849784612656%2C50.87814430293616&amp;layer=mapnik" 
+                    style="border: 1px solid black">
+                    </iframe>
+                    <br/>
+                    <small>
+                        <a href="https://www.openstreetmap.org/?#map=19/50.877647/19.057471">
+                        Wyświetl większą mapę
+                        </a>
+                    </small>
+                </div>
+
+
+// do style.css zamiast #map
+
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+}

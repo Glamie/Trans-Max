@@ -1,0 +1,569 @@
+body {
+    font-family: "Roboto Flex", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#nazwa_firmy{
+    color:#00cadf;
+    font-size: 30px;
+    margin: 2px;
+}
+
+header {
+    background-color: #313234;
+    height: 75px;
+    width: 100%;
+    margin: 0;
+}
+
+.naglowek {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+header > nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header > nav img {
+    width: 110px;
+    height: 50px;
+}
+
+header > nav ul.menu {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+header > nav ul.menu > li {
+    margin-left: 20px;
+}
+
+header > nav ul.menu > li > a {
+    line-height: 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header > nav ul.menu > li > a:hover {
+    color: #00cadf;
+}
+
+.hamburger {
+    display: none; /* Domyślnie ukryty na dużych ekranach */
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    align-items: center;
+    gap: 8px;
+}
+
+.hamburger-text {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex; /* Pokazujemy hamburger na małych ekranach */
+    }
+
+    header > nav ul.menu {
+        display: none !important; /* Ukrywamy menu na małych ekranach */
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background-color: #313234;
+        padding: 10px 0;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    header > nav ul.menu.active {
+        display: flex !important; /* Pokazujemy menu po kliknięciu */
+    }
+
+    header > nav ul.menu > li {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    header > nav ul.menu > li > a {
+        font-size: 16px;
+        display: block;
+        padding: 10px;
+    }
+
+    header > nav #nazwa_logotyp {
+        font-size: 150%;
+        margin-left: 10px;
+    }
+
+    header > nav img {
+        width: 80px;
+        height: 40px;
+    }
+}
+
+.language-selector {
+    position: fixed;
+    top: 20%;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.language-selector ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.language-selector li {
+    margin: 5px 0;
+}
+
+.language-selector img {
+    width: 30px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.language-selector a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.language-selector a:hover {
+    color: #00cadf;
+}
+
+/*hero (obraz powitalny)*/
+.hero {
+    position: relative;
+    height: 550px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slogan {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+    padding: 20px;
+}
+
+.slogan h1 {
+    font-weight: lighter;
+    margin: 0;
+    line-height: 1;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 250px;
+    }
+
+    .slogan {
+        max-width: 100%;
+        padding: 15px;
+        right: 0;
+        left: 0;
+        text-align: center;
+    }
+
+    .slogan h1 {
+        font-size: 24px;
+    }
+
+    .slogan > p {
+        font-size: 18px;
+    }
+}
+
+/*Informacje o usługach*/
+section > .container {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.icon-container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.icon-square {
+    background-color: black;
+    border-radius: 15%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.icon-square i {
+    color: white;
+    font-size: 40px;
+}
+
+
+.middle-icon{
+    background-color: #00cadf;
+}
+.blue-title{
+    color: #00cadf;
+}
+
+.icon-text {
+    background-color: white;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 0px;
+}
+
+.col-2 {
+    flex: 1;  /* Każdy element w rzędzie zajmuje 1/4 przestrzeni */
+    text-align: center;
+}
+
+/* Zmiana dla środkowej kolumny */
+.col-2:nth-child(2) {
+    align-self: center; /* Wyrównuje środkową ikonę pionowo */
+}
+
+/*Lista usług*/
+#uslugi{
+    text-align: center;
+}
+
+#lista_uslug{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LICZBY */
+.numbers-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.number-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.number {
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+.label {
+    font-size: 30px;
+    color: #00cadf;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .numbers-section {
+        margin-top: 30px;
+    }
+
+    .number-container {
+        margin: 10px;
+    }
+
+    .number {
+        font-size: 30px;
+    }
+
+    .label {
+        font-size: 14px;
+    }
+}
+
+/*skladanie ofert (tylko dla wersji polskiej,ponieważ oferteo działa tylko na terenie polski)*/
+
+#zlecenia {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.zlecenia-container{
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+#zlecenia h2 {
+    font-size: 24px;
+    color: #00cadf;
+    margin-bottom: 20px;
+}
+
+#zlecenia a img {
+    max-width: 200px; 
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+/* Styl animacji po najechaniu*/
+#zlecenia a:hover img {
+    opacity: 0.6;
+    animation: pulse 0.8s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.07);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#zlecenia i {
+    color: black;
+    font-size: 40px;
+}
+
+@media (max-width: 768px) {
+    #zlecenia {
+        padding: 20px 0;
+    }
+
+    #zlecenia h2 {
+        font-size: 20px;
+    }
+
+    #zlecenia a img {
+        max-width: 150px; 
+    }
+}
+
+
+/*Stopka*/
+/* Ogólny styl stopki */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 0;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Kontener dla kolumn */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Umożliwia elastyczne rozmieszczenie kolumn na mniejszych ekranach */
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Kolumny */
+.footer-column {
+    flex: 1;
+    padding: 0 15px;
+    min-width: 250px; /* Zmniejszamy minimalną szerokość dla lepszego dopasowania na małych ekranach */
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* Nagłówki kolumn */
+.footer-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-title h3 {
+    margin: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.footer-title .title-line {
+    flex: 1;
+    height: 2px;
+    background-color: #555;
+    margin-left: 10px;
+}
+
+/* Treść kolumn */
+.footer-column p {
+    margin: 0 0 10px;
+    line-height: 1.6;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*Układ z dwiema kolumnami */
+.rowfoot {
+    display: grid;
+    grid-template-columns: 100px auto; /* Dwie kolumny: 100px i reszta miejsca */
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.o_nas{
+    text-align: justify;
+}
+
+.rowfoot p {
+    margin: 0;
+}
+
+.rowfoot p:nth-child(odd){
+    font-weight: bold;
+}
+/* Dolna sekcja */
+.footer-bottom {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    font-size: 13px;
+    color: #aaa;
+    text-align: center; 
+    background-color: #222;
+}
+
+/*mapa*/
+/* Styl dla mapy */
+.map-container {
+    margin-top: 20px;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+#map {
+    width: 80%; 
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.map-container > small {
+    margin-top: 10px; 
+    text-align: center; 
+}
+
+.map-container > small > a {
+    color: #00cadf;
+    text-decoration: none;
+    display: inline-block; 
+    margin-bottom: 10px;
+}
+
+/* Responsywność dla mniejszych ekranów */
+@media (max-width: 768px) {
+    #map {
+        height: 200px;
+        width: 90%; 
+    }
+}
+
+/* RESPONSYWNOŚĆ - calej dolnej sekcji */
+/* Zmniejszenie czcionki w stopce */
+@media (max-width: 768px) {
+    footer {
+        font-size: 12px;
+    }
+
+    .footer-container {
+        padding: 0 10px; /* Mniejsze odstępy na małych ekranach */
+    }
+
+    .footer-column {
+        min-width: 100%; /* Kolumny będą się rozciągały na całą szerokość na małych ekranach */
+        margin-top: 20px;
+        text-align: center; /* Tekst w stopce wycentrowany */
+    }
+
+    .rowfoot {
+        grid-template-columns: 1fr; /* Jedna kolumna dla kontaktu */
+    }
+
+    .social-icons {
+        justify-content: center; /* Centrujemy ikony na małych ekranach */
+    }
+}
