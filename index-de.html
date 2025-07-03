@@ -60,6 +60,14 @@
          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
          })(window,document,'script','dataLayer','GTM-PC7GCTLP');</script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-C4DSGQSEE1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-C4DSGQSEE1');
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
@@ -87,7 +95,17 @@
         <header>
             <nav class="naglowek">
             <h1  id="nazwa_firmy">PHU Trans-Max s.c.</h1>
-            <button class="hamburger" aria-label="Otwórz menu">
+            <div class="animacja-container">
+                <i class="fa-solid fa-cubes icon"></i>
+                <i class="fa-solid fa-dolly icon"></i>
+                <i class="fa-solid fa-truck-ramp-box icon"></i>
+                <i class="fa-solid fa-truck icon"></i>
+                <i class="fa-solid fa-truck-fast icon"></i>
+                <i class="fa-solid fa-chart-line icon"></i>
+                <i class="fa-solid fa-money-bill-trend-up icon"></i>
+            </div>
+            <div class="menu-group">
+            <button class="hamburger" aria-label="Menü öffnen">
                 <i class="fas fa-bars"></i>
                 <span class="hamburger-text">MENÜ</span>
             </button>
@@ -97,19 +115,19 @@
                 <li><a href="#uslugi">Dienstleistungen</a></li>
                 <li><a href="#kontakt">Kontakt</a></li>
             </ul>
+            <div class="language-dropdown">
+                <select id="language-select" onchange="changeLanguage()">
+                    <option value="pl">PL</option>
+                    <option value="en">EN</option>
+                    <option value="de" selected>DE</option>
+                    <option value="fr">FR</option>
+                    <option value="it">IT</option>
+                    <option value="nl">NL</option>
+                </select>
+            </div>
+            </div>
            </nav>
         </header>
-
-        <div class="language-selector">
-            <ul>
-                <li><a href="index.html" title="Polski" rel="alternate" hreflang="pl"><img src="https://flagcdn.com/w20/pl.png" alt="Polski"></a></li>
-                <li><a href="index-en.html" title="English" rel="alternate" hreflang="en"><img src="https://flagcdn.com/w20/gb.png" alt="English"></a></li>
-                <li><a href="index-de.html" title="Deutsch" rel="alternate" hreflang="de"><img src="https://flagcdn.com/w20/de.png" alt="Deutsch"></a></li>
-                <li><a href="index-fr.html" title="Français" rel="alternate" hreflang="fr"><img src="https://flagcdn.com/w20/fr.png" alt="Français"></a></li>
-                <li><a href="index-it.html" title="Italiano" rel="alternate" hreflang="it"><img src="https://flagcdn.com/w20/it.png" alt="Italiano"></a></li>
-                <li><a href="index-nl.html" title="Nederlands" rel="alternate" hreflang="nl"><img src="https://flagcdn.com/w20/nl.png" alt="Nederlands"></a></li>
-            </ul>
-        </div>
 
         <section class="hero">
             <img src="images/hero_image.jpg" alt="Bild eines Lastwagens">
@@ -216,12 +234,18 @@
                     <div class="title-line"></div>
                 </div>
                 <div class="rowfoot">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <br>
                     <p>Adresse:</p>
                     <p>Polen, Straße: Częstochowska 85, 42-125 Biała</p>
-    
+
+                    <i class="fa-solid fa-phone"></i>
+                    <br>
                     <p>Telefon:</p>
                     <p>+48 34 362 7418 - Büro<br>+48 504 411 310 - der Boss</p>
-    
+
+                    <i class="fa-solid fa-envelope"></i>
+                    <br>
                     <p>Email:</p>
                     <p>transs-max@wp.pl </p>
                 </div>
