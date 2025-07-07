@@ -437,6 +437,79 @@ section > .container {
 }
 
 
+/*Oferta pracy*/
+#praca {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.praca-container{
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+#praca h2 {
+    font-size: 24px;
+    color: #00cadf;
+    margin-bottom: 20px;
+}
+
+#praca p {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+#praca a img {
+    max-width: 200px;
+    max-height: 100px; 
+    height: auto;
+    transition: opacity 0.3s ease;
+    margin: 5px;
+}
+
+/* Styl animacji po najechaniu*/
+#praca a:hover img {
+    opacity: 0.6;
+    animation: pulse 0.8s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.07);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#praca i {
+    color: black;
+    font-size: 40px;
+}
+
+@media (max-width: 992px) {
+    #praca {
+        padding: 20px 0;
+    }
+
+    #praca h2 {
+        font-size: 20px;
+    }
+
+    #praca a img {
+        max-width: 150px; 
+    }
+}
+
+
 /*Stopka*/
 /* Ogólny styl stopki */
 footer {
