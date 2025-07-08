@@ -20,13 +20,25 @@ function changeLanguage() {
 }
     
 // Inicjalizacja mapy Leaflet
-var map = L.map('map').setView([50.877874951656466, 19.057822788785728], 13); // Współrzędne
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
-L.marker([50.877874951656466, 19.057822788785728]).addTo(map)
-    .bindPopup('PHU Trans-Max<br>ul. Częstochowska 85, Biała')
-    .openPopup();
+document.addEventListener('DOMContentLoaded', () => {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+        link.integrity = 'sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=';
+        link.crossOrigin = 'anonymous';
+        document.head.appendChild(link);
+    });
+    
+document.addEventListener('DOMContentLoaded', () => {
+    var map = L.map('map').setView([50.877874951656466, 19.057822788785728], 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+    L.marker([50.877874951656466, 19.057822788785728]).addTo(map)
+        .bindPopup('PHU Trans-Max<br>ul. Częstochowska 85, Biała')
+        .openPopup();
+});
+
 
 
 //animacja pętli ikon w nagłówku
