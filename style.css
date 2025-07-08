@@ -12,7 +12,7 @@ body {
 }
 
 #nazwa_firmy{
-    color:#00cadf;
+    color:blue;
     font-size: 27px;
     margin: 1px;
 }
@@ -75,7 +75,7 @@ header > nav ul.menu > li > a {
 }
 
 header > nav ul.menu > li > a:hover {
-    color: #00cadf;
+    color: blue;
 }
 
 .hamburger {
@@ -108,7 +108,7 @@ header > nav ul.menu > li > a:hover {
 
 .icon {
     font-size: 24px;
-    color: #00cadf;
+    color: blue;
     opacity: 0;
     position: absolute;
     transition: opacity 0.5s ease-in-out;
@@ -124,7 +124,7 @@ header > nav ul.menu > li > a:hover {
 }
 
 #language-select {
-    background-color: #00cadf;
+    background-color: blue;
     color: #fff;
     border: none;
     padding: 5px 25px 5px 10px;
@@ -283,10 +283,10 @@ section > .container {
 
 
 .middle-icon{
-    background-color: #00cadf;
+    background-color: blue;
 }
 .blue-title{
-    color: #00cadf;
+    color: blue;
 }
 
 .icon-text {
@@ -347,7 +347,7 @@ section > .container {
 
 .label {
     font-size: 30px;
-    color: #00cadf;
+    color: blue;
     margin-top: 5px;
 }
 
@@ -387,7 +387,7 @@ section > .container {
 
 #zlecenia h2 {
     font-size: 24px;
-    color: #00cadf;
+    color: blue;
     margin-bottom: 20px;
 }
 
@@ -454,7 +454,7 @@ section > .container {
 
 #praca h2 {
     font-size: 24px;
-    color: #00cadf;
+    color: blue;
     margin-bottom: 20px;
 }
 
@@ -627,7 +627,7 @@ footer {
 }
 
 .map-container > small > a {
-    color: #00cadf;
+    color: white;
     text-decoration: none;
     display: inline-block; 
     margin-bottom: 10px;
