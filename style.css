@@ -121,6 +121,9 @@ header > nav ul.menu > li > a:hover {
 /*sekcja jezykowa*/
 .language-dropdown {
     position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 #language-select {
