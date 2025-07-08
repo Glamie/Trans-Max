@@ -215,7 +215,7 @@ header > nav ul.menu > li > a:hover {
 }
 
 .slogan {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
     max-width: 100%;
     position: absolute;
@@ -229,6 +229,7 @@ header > nav ul.menu > li > a:hover {
     font-weight: lighter;
     margin: 0;
     line-height: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 992px) {
@@ -283,10 +284,10 @@ section > .container {
 
 
 .middle-icon{
-    background-color: blue;
+    background-color: #005566;
 }
 .blue-title{
-    color: blue;
+    color: #005566;
 }
 
 .icon-text {
@@ -347,7 +348,7 @@ section > .container {
 
 .label {
     font-size: 30px;
-    color: blue;
+    color: #005566;;
     margin-top: 5px;
 }
 
@@ -598,7 +599,7 @@ footer {
     margin-top: 20px;
     border-top: 1px solid #555;
     font-size: 13px;
-    color: #aaa;
+    color: #fff;
     text-align: center; 
     background-color: #222;
 }
