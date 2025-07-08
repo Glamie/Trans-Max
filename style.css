@@ -228,7 +228,7 @@ header > nav ul.menu > li > a:hover {
     padding: 20px;
 }
 
-.slogan h1 {
+.slogan h2 {
     font-weight: lighter;
     margin: 0;
     line-height: 1;
@@ -248,7 +248,7 @@ header > nav ul.menu > li > a:hover {
         text-align: center;
     }
 
-    .slogan h1 {
+    .slogan h2 {
         font-size: 24px;
     }
 
@@ -258,6 +258,14 @@ header > nav ul.menu > li > a:hover {
 }
 
 /*Informacje o usługach*/
+
+.informacje h2 {
+    text-align: center;
+    font-size: 24px;
+    color: black;
+    margin-bottom: 20px;
+}
+
 section > .container {
     margin: 50px auto;
     text-align: center;
