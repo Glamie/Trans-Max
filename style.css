@@ -20,7 +20,7 @@ body {
 }
 
 #nazwa_firmy{
-    color:blue;
+    color:white;
     font-size: 27px;
     margin: 1px;
 }
@@ -83,7 +83,7 @@ header > nav ul.menu > li > a {
 }
 
 header > nav ul.menu > li > a:hover {
-    color: blue;
+    color: #0099b3;
 }
 
 .hamburger {
@@ -116,7 +116,7 @@ header > nav ul.menu > li > a:hover {
 
 .icon {
     font-size: 24px;
-    color: blue;
+    color: white;
     opacity: 0;
     position: absolute;
     transition: opacity 0.5s ease-in-out;
